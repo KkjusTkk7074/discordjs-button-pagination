@@ -69,6 +69,8 @@ case buttonList[3].customId:
       const disabledRow = new MessageActionRow().addComponents(
         buttonList[0].setDisabled(true),
         buttonList[1].setDisabled(true)
+buttonList[2].setDisabled(true),
+        buttonList[3].setDisabled(true)
       );
       curPage.edit({
         embeds: [pages[page].setFooter(`Page ${page + 1} / ${pages.length}`)],
