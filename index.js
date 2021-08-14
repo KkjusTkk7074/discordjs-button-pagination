@@ -21,7 +21,7 @@ const paginationEmbed = async (msg, pages, buttonList, timeout = 120000) => {
     throw new Error(
       "Link buttons are not supported with discordjs-button-pagination"
     );
-  if (buttonList.length !== 2) throw new Error("Need two buttons.");
+  if (buttonList.length !== 4) throw new Error("Need four buttons.");
 
   let page = 0;
 
