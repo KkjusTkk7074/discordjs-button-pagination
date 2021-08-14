@@ -68,8 +68,8 @@ case buttonList[3].customId:
     if (!curPage.deleted) {
       const disabledRow = new MessageActionRow().addComponents(
         buttonList[0].setDisabled(true),
-        buttonList[1].setDisabled(true)
-buttonList[2].setDisabled(true),
+        buttonList[1].setDisabled(true),
+        buttonList[2].setDisabled(true),
         buttonList[3].setDisabled(true)
       );
       curPage.edit({
