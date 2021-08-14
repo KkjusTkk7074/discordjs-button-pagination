@@ -42,7 +42,7 @@ const paginationEmbed = async (msg, pages, buttonList, timeout = 120000) => {
   collector.on("collect", async (i) => {
     switch (i.customId) {
       case buttonList[0].customId:
-        page =  pages.first()
+        page =  0
         break;
       case buttonList[1].customId:
         page = page > 0 ? --page : pages.length - 1;
